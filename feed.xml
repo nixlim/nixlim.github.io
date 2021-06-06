@@ -1,31 +1,489 @@
----
-layout: null
-nav_exclude: true
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>The AI Poet</title>
+    <description>A Jekyll theme for content-rich sites</description>
+    <link>https://nixlim.github.io/</link>
+    <atom:link href="https://nixlim.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 06 Jun 2021 19:44:34 +0100</pubDate>
+    <lastBuildDate>Sun, 06 Jun 2021 19:44:34 +0100</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Episode #6: The Crown</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tKkdGvEWGsU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;THE CROWN&lt;br /&gt;
+by AI Poet&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;By every breeze that blows,&lt;/span&gt; &lt;br /&gt;
+There’s music in the leaves,&lt;br /&gt;
+&lt;!--more--&gt;
+And in the moss the sound&lt;br /&gt;
+Of a sweet voice and tabor-band,&lt;br /&gt;
+And, ‘mid the eddies there,&lt;br /&gt;
+The echo of a song.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sweet soul! ‘tis not in words,&lt;br /&gt;
+In tones, in zephyrs weak,&lt;br /&gt;
+To tell how sweet thou art,&lt;br /&gt;
+How beautiful thou art.&lt;br /&gt;
+But when the night-wind sighs&lt;br /&gt;
+Along the shadowy sway,&lt;br /&gt;
+And clouds of silence steal&lt;br /&gt;
+To hide the face of love,&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I can catch the heart&lt;br /&gt;
+Of evening, and reveal&lt;br /&gt;
+The face of peace, and praise&lt;br /&gt;
+Thy beauty, pure and rare,&lt;br /&gt;
+With love’s wild ecstasy,&lt;br /&gt;
+In silent worship.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;TO-NIGHT, the star that shines so clear,&lt;br /&gt;
+The crown of evening on thy brow,&lt;br /&gt;
+The pearl of spring, to thee I dedicate&lt;br /&gt;
+All my heart, for thou hast given so much:&lt;br /&gt;
+Oh, whisper, borrow, steal, until&lt;br /&gt;
+I exhaust my store; borrow loud and late,&lt;br /&gt;
+For I am dying for thy sake.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;TO-NIGHT, the star that shines so clear,&lt;br /&gt;
+The crown of evening on thy brow,&lt;br /&gt;
+The pearl of spring, to thee I dedicate&lt;br /&gt;
+All my heart, for thou hast given so much:&lt;br /&gt;
+Oh, whisper, borrow, steal, until&lt;br /&gt;
+I exhaust my store; borrow loud and late,&lt;br /&gt;
+For I am dying for thy sake.&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Jun 2021 01:00:00 +0100</pubDate>
+        <link>https://nixlim.github.io/articles/21/episode-6</link>
+        <guid isPermaLink="true">https://nixlim.github.io/articles/21/episode-6</guid>
+        
+        
+        <category>post</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Episode #5: There is no light</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/OdJ8ROgaSPo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;There is no light&lt;br /&gt;
+by AI Poet&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Still lay there quivering into speech,&lt;/span&gt; &lt;br /&gt;
+As if the glory of all time&lt;br /&gt;
+&lt;!--more--&gt;
+Was sinking, and the souls of men&lt;br /&gt;
+Were gathering to the feast.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The little alcove, dim-lit&lt;br /&gt;
+With a tallow candle’s gleam,&lt;br /&gt;
+With the lean lamp-light over-glowing&lt;br /&gt;
+As the yellow candle’s glow&lt;br /&gt;
+Over the tallow candle’s glow,–&lt;br /&gt;
+Stood there dark-lipped and silent,&lt;br /&gt;
+Stood the lean lamp-light, pale and lorn,&lt;br /&gt;
+With the dim, stricken eyes of dreams&lt;br /&gt;
+Turned on the picture of his love&lt;br /&gt;
+When she turned her face from him.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The lamp upon the mantel-shelf,&lt;br /&gt;
+The portrait of the bride-bed,–&lt;br /&gt;
+All were silent, looking on her;&lt;br /&gt;
+And he, too, gazing, felt his heart&lt;br /&gt;
+Become as one hoarse with song&lt;br /&gt;
+That the roof under which he lies&lt;br /&gt;
+Drops suddenly, and he falls&lt;br /&gt;
+In the chaos of irrevocable song&lt;br /&gt;
+Whose echo is the silence.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh! thou hast taken the ring&lt;br /&gt;
+From out the beautiful finger&lt;br /&gt;
+That in beauty bloomed and shook,&lt;br /&gt;
+Making the fair face to smile&lt;br /&gt;
+As if the light for ever ceased&lt;br /&gt;
+From out the beautiful soul.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;No song of ours can ever&lt;br /&gt;
+Make ring upon that memory&lt;br /&gt;
+As thine own song of love can,&lt;br /&gt;
+As thine own face, in beauty,&lt;br /&gt;
+Weave its soft grace and gracefulness&lt;br /&gt;
+With the light of other days.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;But thou art silent!  Oh!  canst thou&lt;br /&gt;
+Whose words are like the dreaming&lt;br /&gt;
+Of the starlight on the ocean,&lt;br /&gt;
+Speak of one who has no word&lt;br /&gt;
+Save these of sorrow and shame?&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Speak, speak! it is thy doom;&lt;br /&gt;
+And grief and despairing shame&lt;br /&gt;
+Wait on thy word,–and thy shame&lt;br /&gt;
+Is spoken loud in the heaven,&lt;br /&gt;
+And thine heart is answered&lt;br /&gt;
+When the rich sons of pride&lt;br /&gt;
+Pronounce thy sentence here.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yet, when they pass and leave no trace&lt;br /&gt;
+Of a mystery,–when the heavens&lt;br /&gt;
+Are as before,–and thou art left&lt;br /&gt;
+To thine own grief and despair,&lt;br /&gt;
+Thou art not cast out from the heavens&lt;br /&gt;
+Because the curse is on thee,&lt;br /&gt;
+But is like a rich pledge sent&lt;br /&gt;
+To thine own Father’s home.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a door through which the light&lt;br /&gt;
+Of day is dimm’d, a narrow way,&lt;br /&gt;
+Where darkness lies in deadly swoon,&lt;br /&gt;
+Asleep and fast asleep, while pale&lt;br /&gt;
+The shadows of the other days&lt;br /&gt;
+Creep around him balefully.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;He will not pass through that door, for he&lt;br /&gt;
+Knows that the door is dark and alone,&lt;br /&gt;
+And that there is no end to his pain;&lt;br /&gt;
+And he has said, when he knows how one&lt;br /&gt;
+Sighs for a doorway into light,&lt;br /&gt;
+“There is no light except the light within.”&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The other days sleep as they have ever done,&lt;br /&gt;
+And their sorrow is as baneful sweet&lt;br /&gt;
+As a deadly poison; and the sighs&lt;br /&gt;
+Of the other days are the sighs of death,&lt;br /&gt;
+Whose lips are close, whose breath is like fire,&lt;br /&gt;
+And the voices of the other days&lt;br /&gt;
+Are a death-song to his ear.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;He hath forgotten the other days;&lt;br /&gt;
+He hath fed on ashes, and they are heeds&lt;br /&gt;
+To him, and he hath drunk the poisonous wine&lt;br /&gt;
+Of the other days’ sorrow, and it takes&lt;br /&gt;
+The light out of him and his joys.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;He will not pass through that door, for he knows that he&lt;br /&gt;
+Was not made to pass through that door, and he knows that life&lt;br /&gt;
+Was not made for him who would pass through that door;&lt;br /&gt;
+And he hath said, when his eyes are dark with tears,&lt;br /&gt;
+“There is no light except the light within.”&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Speak, ye living lights that round us shine!&lt;br /&gt;
+Speak and say whether in that secret place&lt;br /&gt;
+We too have our glory, and our praise!&lt;br /&gt;
+For in the silence that follows death,&lt;br /&gt;
+Noiseless as a sleep, we seem to hear&lt;br /&gt;
+Your voices saying, “We were poor, but were proud.”&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;We, that have brightness in our hearts&lt;br /&gt;
+To follow truth where it may lead,&lt;br /&gt;
+Praised be your glory, and rejoice&lt;br /&gt;
+That ye gave such promise in your creed,&lt;br /&gt;
+When ye had little faith at all.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ye, that have knowledge, ye too have glory,&lt;br /&gt;
+Ye too have praise; ye too have faith,&lt;br /&gt;
+Unto your souls are ye emperors!&lt;br /&gt;
+You, that have power and the listening world&lt;br /&gt;
+To bless and govern all the rest,&lt;br /&gt;
+Praised be your promise, and rejoice&lt;br /&gt;
+That ye gave such pledge in your creed.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 May 2021 01:00:00 +0100</pubDate>
+        <link>https://nixlim.github.io/articles/21/episode-5</link>
+        <guid isPermaLink="true">https://nixlim.github.io/articles/21/episode-5</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Episode #4: Wild waves</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/raw09zEs0R8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Wild Waves&lt;br /&gt;
+by AI Poet&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;I’ve wandered ‘mong the wild waves&lt;/span&gt; &lt;br /&gt;
+Of life’s unsought surprises,&lt;br /&gt;
+&lt;!--more--&gt;
+And lo, on a raw, uncouth sea&lt;br /&gt;
+I’ve stood the shock of the wind and rain;&lt;br /&gt;
+I’ve watched the sea-gulls fly&lt;br /&gt;
+O’er the storm-worn rocks;&lt;br /&gt;
+And watched the restless clouds&lt;br /&gt;
+Flow in wild, uninhabited masses.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;My home is on the sea,&lt;br /&gt;
+And my fortunes are made;&lt;br /&gt;
+I know no home on the earth,&lt;br /&gt;
+No domain with possessions to bind;&lt;br /&gt;
+I turn, for my heart is set&lt;br /&gt;
+Where wave and land meet in joy and sorrow;&lt;br /&gt;
+There, where the tide of the two seas is thickest,&lt;br /&gt;
+The kingdom of soul is my home, my progenitor.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;While thought and matter are in conflict,&lt;br /&gt;
+They both go forth; and mind goes forth to body,&lt;br /&gt;
+A shadow which cannot be built of,&lt;br /&gt;
+And rises and rests on the spirit and sin,&lt;br /&gt;
+And is not of the flesh nor of the spirit.&lt;br /&gt;
+It is the spring whence all motion flows,&lt;br /&gt;
+The shadow that mind sets up on the sea,&lt;br /&gt;
+The sudden light that body is laced,&lt;br /&gt;
+The unfiled deep in the man or the angel.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where, in your strife for existence, you&lt;br /&gt;
+Gaze far out to the ethereal distances&lt;br /&gt;
+In the blinding tumult of passing worlds,&lt;br /&gt;
+I sit and watch your pilgrimage in peace&lt;br /&gt;
+To the silent shore where thought comes to rest,&lt;br /&gt;
+And watch the passing forms of yesterday&lt;br /&gt;
+Glance on my past to-day.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is that curious old question of the soul&lt;br /&gt;
+Which, once answered, ne’ertheless ne’ertheless persists,&lt;br /&gt;
+And may not be answered; a dumb gaze we have&lt;br /&gt;
+At the strange gulf which has opened topless,&lt;br /&gt;
+And only by warping to its primal bottom&lt;br /&gt;
+Can any end behould your pitiful longing,&lt;br /&gt;
+And the end comes never.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 May 2021 01:00:00 +0100</pubDate>
+        <link>https://nixlim.github.io/articles/21/episode-4</link>
+        <guid isPermaLink="true">https://nixlim.github.io/articles/21/episode-4</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Episode #3: My night is done</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jCdL73y4jPg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;My Night is Done&lt;br /&gt;
+by AI Poet&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;My night is done. I close my eyes&lt;/span&gt; &lt;br /&gt;
+And see the steely light turn grey&lt;br /&gt;
+&lt;!--more--&gt;
+And float away to the peace of the sky.&lt;br /&gt;
+Above the stars it murmurs and mocks&lt;br /&gt;
+Its self-disturbed monotone of fear:&lt;br /&gt;
+Like a ghost that comes and goes,&lt;br /&gt;
+It flits and whispers, and will stay not.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, like a stifled cry, there comes&lt;br /&gt;
+A cry, a high piercing scream;&lt;br /&gt;
+A cry like some sweet flower wrenched from Earth&lt;br /&gt;
+And tossed on the wind to die.&lt;br /&gt;
+And then the air is on me&lt;br /&gt;
+And I am free!  It is not love, it is not hate,&lt;br /&gt;
+It is an awful thing more vast than these.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I cannot die, but I have left a soul at home.&lt;br /&gt;
+I think that is safe; but death can come to these.&lt;br /&gt;
+They live inside their sheltered world,&lt;br /&gt;
+Who know its ways and know their own.&lt;br /&gt;
+I thought I would have been the one to teach them.&lt;br /&gt;
+But this they learned of me.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I think I would have taught them, and would have meant&lt;br /&gt;
+To teach them myself; but I never had learned.&lt;br /&gt;&lt;br /&gt;
+The boy that I left at home is now a man;&lt;br /&gt;
+The man that I left at home is now a father,&lt;br /&gt;
+And I have never been myself since then.&lt;br /&gt;
+I was a phantom, spectral and snaky, a goiter,&lt;br /&gt;
+That would not rest until it lay upon something,&lt;br /&gt;
+And so it lay upon you,&lt;br /&gt;
+On my neck, on my hair, on these last fragments of me.&lt;br /&gt;
+And my teeth could not eat enough of it to waste it.&lt;br /&gt;
+I have no will now.&lt;br /&gt;
+My will is a hollow ghost at best, a shadow;&lt;br /&gt;
+I know I am old;&lt;br /&gt;
+I know too much; and I am scared to death&lt;br /&gt;
+To go back and find my body, to lay me low,&lt;br /&gt;
+To fill up the gaps in my pockets, fill up my pipes.&lt;br /&gt;
+But I cannot leave you, you that love me,&lt;br /&gt;
+And you that care for me.&lt;br /&gt;
+It is dark; I cannot go back.&lt;br /&gt;
+And if I could,&lt;br /&gt;
+What could I do?&lt;br /&gt;
+I fear the phantom, hollow voice at end of my shaft,&lt;br /&gt;
+The voice of my midget finger at end of my bow.&lt;br /&gt;
+And if I could,&lt;br /&gt;
+What would I do?&lt;br /&gt;
+I cannot go back.&lt;br /&gt;
+I cannot go back.&lt;br /&gt;
+I want to.&lt;br /&gt;
+I will not go back.&lt;br /&gt;
+I cannot go back.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 May 2021 01:00:00 +0100</pubDate>
+        <link>https://nixlim.github.io/articles/21/episode-3</link>
+        <guid isPermaLink="true">https://nixlim.github.io/articles/21/episode-3</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Episode #2: Bones</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QDEisOiayYU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Bones&lt;br /&gt;
+by AI Poet&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;When I am now a wreck of bones,&lt;/span&gt; &lt;br /&gt;
+Whose eyes betray the sneak and lie&lt;br /&gt;
+&lt;!--more--&gt; 
+Of the death-stricken days of yore,&lt;br /&gt;
+Pray God that in the contrite heart&lt;br /&gt;
+One kindly memory of the good&lt;br /&gt;
+That was may yet survive for years&lt;br /&gt;
+That now are past in endless years,&lt;br /&gt;
+As a faint wistful light beneath the night.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The seed-time and the growth-time of the year&lt;br /&gt;
+Are over. The full-blown autumn roses&lt;br /&gt;
+Are withered. The baleful noontide shadows&lt;br /&gt;
+Fall on all the green and bleeding things.&lt;br /&gt;
+The winds are hushed about the little rooms&lt;br /&gt;
+Where I have lain down by the winding boards&lt;br /&gt;
+For weary days in sad and sweet repose.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The stars are all aflare in dark skies,&lt;br /&gt;
+Like little golden watches round about me,&lt;br /&gt;
+And the moon and the stars are both but eyes,&lt;br /&gt;
+With white unseeing stares, asking of me&lt;br /&gt;
+What is my name? and why am I here&lt;br /&gt;
+In this black, choking maze of clouds and deeps?&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;And there is no sun upon the earth,&lt;br /&gt;
+Only a black, burning, godless sky&lt;br /&gt;
+That swathed its living creatures in its pall,&lt;br /&gt;
+And covered and bound them with its black,&lt;br /&gt;
+Deadly mystery, and sent them forth&lt;br /&gt;
+Into a land of death and silence,&lt;br /&gt;
+Into this long, long, strange journey of death,&lt;br /&gt;
+To die and have no life or word to say.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have been dead before, and surely&lt;br /&gt;
+Death will come to me ere long, though soon,&lt;br /&gt;
+And leave no pulse nor certain breath,&lt;br /&gt;
+And turn to dust what yet is not.&lt;br /&gt;
+No words shall tell the nameless suspense,&lt;br /&gt;
+No face to see, no form to know,&lt;br /&gt;
+And none to tell me how to think and wait.&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 May 2021 01:00:00 +0100</pubDate>
+        <link>https://nixlim.github.io/articles/21/episode-2</link>
+        <guid isPermaLink="true">https://nixlim.github.io/articles/21/episode-2</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Episode #1: The Song of Wren</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D78YbjO2BAU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The Song of Wren&lt;label for=&quot;One&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;One&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;A theme of imitation of bird’s experience is woven into the poem, quite consistently. The AI uses the actual behavioural characteristics of &lt;a href=&quot;https://en.wikipedia.org/wiki/Wren&quot;&gt;&lt;em&gt;wren&lt;/em&gt;&lt;/a&gt;, to describe the actions taken by the bird &lt;/span&gt;
+&lt;br /&gt;
+by AI Poet&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;By a fay-loved moon in the west,&lt;/span&gt; &lt;br /&gt;
+And a kingdom for me at last.&lt;br /&gt;
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;I will fly where the bird is found&lt;br /&gt;
+That is thought a jewel of white;&lt;br /&gt;
+Where the bird plumes her wings in the dawn,&lt;br /&gt;
+And to the morning makes song&lt;label for=&quot;Two&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;Two&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Wrens are known for their singing, as Wikipedia notes: &lt;em&gt;Wrens have loud and often complex songs, sometimes given in duet by a pair. The songs of members of the genera Cyphorhinus and Microcerculus have been considered especially pleasant to the human ear, leading to common names such as song wren, musician wren, flutist wren, and southern nightingale-wren&lt;/em&gt; &lt;/span&gt;;&lt;br /&gt;
+Where the bird, with down-dropt head,&lt;br /&gt;
+Treads the teeming earth in her search&lt;label for=&quot;Three&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;Three&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Wrens are primarily insectivorous, running around the ground in search of insects. Hence, the use of &lt;em&gt;treads&lt;/em&gt; in the verse is particularly on point. &lt;/span&gt;,&lt;br /&gt;
+And the bird is my love forever.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I will fly where the bird is found&lt;br /&gt;
+That is moonlight to the sense;&lt;br /&gt;
+Where the bird, by fathomless night,&lt;br /&gt;
+Strikes, wakes, and sings a strain;&lt;br /&gt;
+Where the bird flits, a wren in form&lt;label for=&quot;Four&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;Four&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;A direct reference to wren &lt;/span&gt;,&lt;br /&gt;
+Sickness and sleep in her breast,&lt;br /&gt;
+And the bird is my love forever.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I will fly where the bird is found&lt;br /&gt;
+That knows peace; where the bird brings&lt;br /&gt;
+To sleep the thoughts of to-day;&lt;br /&gt;
+Where the bird dies in her flight,&lt;br /&gt;
+And a wisp of her soul remains;&lt;br /&gt;
+And a rose-leaf from her grave&lt;br /&gt;
+Is the rose I bend for ever.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hark! the night winds in sport begin;&lt;br /&gt;
+The bird flies forth in pent tempest flight;&lt;br /&gt;
+The leaves drop from the appointed way,&lt;br /&gt;
+As fleecy clouds do drop from high.&lt;br /&gt;
+They fall, they fall, they fall;&lt;br /&gt;
+Fall, fall, fall, fall, fall,&lt;br /&gt;
+Down, down, down, down, down, down,&lt;label for=&quot;Five&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;Five&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;This passage evokes a feeling of flying &lt;/span&gt;&lt;br /&gt;
+From the thorny bloom of red and gold,&lt;br /&gt;
+Down to the everlasting shore,&lt;br /&gt;
+From the beauteous things of earth that are,&lt;br /&gt;
+To the things that are not,&lt;br /&gt;
+To the kingdom of the taken up,&lt;br /&gt;
+To the world of the spirits and the shadow of the spirits,&lt;br /&gt;
+To the place of the angels of glory and beauty,&lt;br /&gt;
+To the place of the angels that guard us,&lt;br /&gt;
+To the place of the seraphim of glory and beauty,&lt;br /&gt;
+To the place of the feet of glory and beauty,&lt;br /&gt;
+To the place of the feet of glory and beauty,&lt;br /&gt;
+To the place of feet of seraph feet,&lt;br /&gt;
+Fell yesterday.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hark! the night winds in sport begin;&lt;br /&gt;
+The bird flies forth in pent tempest flight;&lt;br /&gt;
+The leaves fall from the appointed way,&lt;br /&gt;
+As fleecy clouds do drop from high.&lt;br /&gt;
+Fell, fell, fell, fell, fell,&lt;br /&gt;
+Fell, fell, fell, fell, fell, fell,&lt;label for=&quot;Six&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;Six&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;This passage evokes a feeling of flying &lt;/span&gt;&lt;br /&gt;
+From the thorny bloom of red and gold,&lt;br /&gt;
+Fell to the everlasting shore,&lt;br /&gt;
+To the world of the taken up,&lt;br /&gt;
+To the world of the spirits and the shadow of the spirits,&lt;br /&gt;
+To the place of the angels of glory and beauty,&lt;br /&gt;
+To the place of the angels that guard us,&lt;br /&gt;
+To the place of the seraphim of glory and beauty,&lt;br /&gt;
+To the place of the feet of glory and beauty,&lt;br /&gt;
+To the place of feet of seraph feet,&lt;br /&gt;
+Fell yesterday.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sweet and low, sweet and low,&lt;br /&gt;
+Wind of the western sea,&lt;br /&gt;
+Low, low, breathe and blow,&lt;br /&gt;
+Wind of the western sea!&lt;br /&gt;
+Over the rolling waters go,&lt;br /&gt;
+Come from the dying moon, and blow,&lt;br /&gt;
+Come from the dying moon, and blow;&lt;br /&gt;
+Blow him again to me, that I may see&lt;br /&gt;
+How the land lies quiet and supine,&lt;br /&gt;
+Where the sea turns to stone, and the town&lt;br /&gt;
+Cities of the vanishing foam&lt;label for=&quot;Seven&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;Seven&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;The first six verses come from &lt;a href=&quot;https://en.wikipedia.org/wiki/Sweet_and_Low_(poem)&quot;&gt;Sweet and Low&lt;/a&gt;, a poem by &lt;a href=&quot;https://en.wikipedia.org/wiki/Alfred,_Lord_Tennyson&quot;&gt;Alfred, Lord Tennyson&lt;/a&gt; It is interesting that the last three verses, which are AI generated, evoke an images of subjucation of nature by &lt;em&gt;civilization sprawl&lt;/em&gt; (&lt;strong&gt;Where the sea turns to stone&lt;/strong&gt;), and &lt;em&gt;population explosion&lt;/em&gt; (&lt;strong&gt;and the town [into] Cities of the vanishing foam&lt;/strong&gt;) &lt;/span&gt;.&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 May 2021 01:00:00 +0100</pubDate>
+        <link>https://nixlim.github.io/articles/21/episode-1</link>
+        <guid isPermaLink="true">https://nixlim.github.io/articles/21/episode-1</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
   </channel>
 </rss>
