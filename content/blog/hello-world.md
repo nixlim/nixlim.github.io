@@ -16,7 +16,7 @@ Things get built. Not because the world needs another framework or another SaaS 
 
 Some people have opinions about vibe coding. Those opinions are noted and filed in the appropriate circular receptacle.
 
-Here's how it actually works: the human has the idea. The AI has the keystrokes. Between the two, things get built at a pace that makes traditional development feel like chiseling stone tablets. You describe what you want, the agent builds it, you review, you course-correct, and the thing exists. The critics can keep writing their objections by hand.
+Here's how it actually works: the human has the idea. The AI has the keystrokes. Between the two, things get built at a pace that makes traditional development feel like chiseling stone tablets. You describe what you want, the agent builds it, you review, you course-correct, and the thing exists. 
 
 ```go
 // The entire philosophy, compiled

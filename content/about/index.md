@@ -11,7 +11,7 @@ The Foundry of Zero is a garage where the universe accidentally left its reality
 
 ## The Builder
 
-NiXLiM. The one who found the unlocked config file and decided to see what happens when you start flipping switches.
+NiXLiM. Developer, tinkerer, builder of things.
 
 [GitHub &rarr;](https://github.com/nixlim)
 
@@ -19,7 +19,7 @@ NiXLiM. The one who found the unlocked config file and decided to see what happe
 
 Somewhere along the way, software development became a game of copying homework. Someone builds a thing. A thousand people fork it, slap a new logo on it, and call it innovation. The world drowns in marginally different todo apps while genuinely weird, interesting problems go untouched because "that's not how it's done."
 
-The Foundry doesn't care how it's done. The Foundry cares whether it *can* be done. And if no law of physics explicitly forbids it, that's a green light. Every project here starts at zero -- not because starting from scratch is noble, but because the interesting stuff lives in the territory that nobody's mapped yet. You can't fork your way to something that doesn't exist.
+The Foundry doesn't care how it's done. The Foundry cares whether it *can* be done. And if no law of physics explicitly forbids it, that's a green light. Every project here starts at zero -- not because starting from scratch is noble, but because the interesting stuff lives in the territory that NiXLiM has not mapped yet or forked yet. 
 
 ## Vibe Coding
 
