@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Gear/cog shape -->
+  <path d="M16 4l2.5 2.5h3.5v3.5L24.5 12.5V16l-2.5 2.5v3.5h-3.5L16 24.5 13.5 22H10v-3.5L7.5 16v-3.5L10 10V6.5h3.5z" fill="none" stroke="#00ff41" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Inner circle -->
+  <circle cx="16" cy="15.5" r="4.5" fill="none" stroke="#00ff41" stroke-width="1.5"/>
+  <!-- Zero text -->
+  <text x="16" y="19" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#00ff41">0</text>
+</svg>
