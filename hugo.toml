@@ -1,0 +1,45 @@
+baseURL = 'https://foundryofzero.ai/'
+languageCode = 'en-us'
+title = 'Foundry of Zero'
+theme = 'foz'
+
+# Taxonomy configuration
+[taxonomies]
+  tag = 'tags'
+
+# Main navigation menu
+[[menus.main]]
+  name = 'Projects'
+  url = '/projects/'
+  weight = 10
+
+[[menus.main]]
+  name = 'Blog'
+  url = '/blog/'
+  weight = 20
+
+[[menus.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 30
+
+# Site parameters
+[params]
+  tagline = "Build what isn't."
+  description = 'Foundry of Zero - Building from nothing to something.'
+  github = 'https://github.com/foundryofzero'
+
+# Markup configuration
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    lineNos = false
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Output formats
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']

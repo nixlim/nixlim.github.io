@@ -1,0 +1,12 @@
+name = "FoZ"
+license = "MIT"
+licenselink = "https://github.com/foundryofzero/foundryofzero_website/blob/main/LICENSE"
+description = "Custom dark theme for Foundry of Zero"
+homepage = "https://foundryofzero.ai/"
+tags = ["dark", "minimal", "developer"]
+features = ["dark theme", "responsive", "syntax highlighting"]
+min_version = "0.100.0"
+
+[author]
+  name = "Foundry of Zero"
+  homepage = "https://foundryofzero.ai/"

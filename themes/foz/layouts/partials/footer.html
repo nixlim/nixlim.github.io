@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <p class="footer-tagline">{{ .Site.Params.tagline }}</p>
+    <p class="footer-copyright">
+      &copy; {{ now.Year }} {{ .Site.Title }}.
+      {{ with .Site.Params.github }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {{ end }}
+    </p>
+    <p class="footer-credit">Built with <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a></p>
+  </div>
+</footer>
