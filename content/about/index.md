@@ -29,5 +29,5 @@ This is not a compromise. This is not "AI-assisted" with air quotes. This is ful
 
 The doubters will catch up eventually. Or they won't. Either way, things are getting built here.
 
-<!-- Placeholder: steampunk goblin Inventor illustration -->
-<!-- <img src="/images/inventor.png" alt="The Inventor - steampunk goblin illustration"> -->
+
+<img src="/images/inventor.png" alt="The Inventor - steampunk goblin illustration">
