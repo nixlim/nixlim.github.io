@@ -1,17 +1,15 @@
 {{ define "main" }}
 <div class="container">
   <h1>#{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages }}
-      <li style="margin-bottom: 1rem;">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ with .Date }}
-          <span class="text-muted" style="margin-left: 0.5rem;">
-            {{ .Format "Jan 2, 2006" }}
-          </span>
-        {{ end }}
-      </li>
-    {{ end }}
-  </ul>
+  {{ if .Pages }}
+    <div class="post-list">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="text-muted">No posts with this tag yet.</p>
+  {{ end }}
+  <a href="/tags/" class="back-link">&larr; All tags</a>
 </div>
 {{ end }}

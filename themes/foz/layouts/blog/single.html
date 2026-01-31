@@ -1,22 +1,24 @@
 {{ define "main" }}
 <div class="container">
-  <article>
+  <article class="blog-post">
     <h1>{{ .Title }}</h1>
-    {{ with .Date }}
-      <p class="text-muted" style="margin-bottom: 2rem;">
+    <div class="post-meta-row">
+      {{ with .Date }}
         <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
-      </p>
-    {{ end }}
-    {{ with .Params.tags }}
-      <div style="margin-bottom: 1.5rem;">
+      {{ end }}
+      <span class="text-muted">&middot;</span>
+      <span class="text-muted">{{ .ReadingTime }} min read</span>
+      {{ with .Params.tags }}
+        <span class="text-muted">&middot;</span>
         {{ range . }}
-          <a href="/tags/{{ . | urlize }}/" class="text-muted" style="margin-right: 0.5rem; font-size: 0.85rem;">#{{ . }}</a>
+          <a href="/tags/{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
         {{ end }}
-      </div>
-    {{ end }}
+      {{ end }}
+    </div>
     <div class="content">
       {{ .Content }}
     </div>
+    <a href="/blog/" class="back-link">&larr; Back to Blog</a>
   </article>
 </div>
 {{ end }}

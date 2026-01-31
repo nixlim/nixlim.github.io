@@ -1,0 +1,27 @@
+<article class="post-card">
+  <a href="{{ .Permalink }}" class="card-link">
+    <div class="card-body">
+      {{ with .Date }}
+        <time class="post-date text-muted" datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>
+      {{ end }}
+      <h3 class="card-title">{{ .Title }}</h3>
+      {{ with .Description }}
+        <p class="card-desc">{{ . }}</p>
+      {{ else }}
+        {{ with .Summary }}
+          <p class="card-desc">{{ . | plainify | truncate 120 }}</p>
+        {{ end }}
+      {{ end }}
+      <div class="post-meta">
+        {{ with .Params.tags }}
+          <div class="card-tags">
+            {{ range . }}
+              <span class="tag-pill">{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+        <span class="text-muted reading-time">{{ .ReadingTime }} min read</span>
+      </div>
+    </div>
+  </a>
+</article>

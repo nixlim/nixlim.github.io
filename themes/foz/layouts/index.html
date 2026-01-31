@@ -1,6 +1,47 @@
 {{ define "main" }}
-<div class="container">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-</div>
+
+{{/* ===== HERO SECTION ===== */}}
+<section id="hero" class="hero">
+  {{- partial "matrix-rain.html" . -}}
+  <div class="hero-content container">
+    <h1 class="hero-title">Foundry of Zero</h1>
+    <p class="hero-tagline">Build what isn't.<span class="cursor">_</span></p>
+    <div class="hero-cta">
+      <a href="/projects/" class="btn btn-outline">View Projects</a>
+      <a href="/blog/" class="btn btn-outline">Read the Blog</a>
+    </div>
+  </div>
+</section>
+
+{{/* ===== FEATURED PROJECTS SECTION ===== */}}
+<section id="projects" class="home-section">
+  <div class="container">
+    <h2 class="section-heading"><span class="section-prefix">//</span> PROJECTS</h2>
+    <div class="card-grid">
+      {{ range where (where .Site.RegularPages "Section" "projects") ".Params.featured" true }}
+        {{ partial "project-card.html" . }}
+      {{ end }}
+    </div>
+    <p class="section-link"><a href="/projects/">View all projects &rarr;</a></p>
+  </div>
+</section>
+
+{{/* ===== LATEST BLOG POSTS SECTION ===== */}}
+<section id="latest" class="home-section">
+  <div class="container">
+    <h2 class="section-heading"><span class="section-prefix">//</span> LATEST</h2>
+    {{ $posts := where .Site.RegularPages "Section" "blog" }}
+    {{ if $posts }}
+      <div class="post-list">
+        {{ range first 3 $posts }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </div>
+      <p class="section-link"><a href="/blog/">View all posts &rarr;</a></p>
+    {{ else }}
+      <p class="text-muted">No posts yet. Check back soon.</p>
+    {{ end }}
+  </div>
+</section>
+
 {{ end }}

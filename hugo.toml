@@ -32,9 +32,10 @@ theme = 'foz'
 # Markup configuration
 [markup]
   [markup.highlight]
-    style = 'dracula'
+    style = 'monokai'
     lineNos = false
     guessSyntax = true
+    tabWidth = 4
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true

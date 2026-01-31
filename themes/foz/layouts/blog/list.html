@@ -2,20 +2,26 @@
 <div class="container">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  <ul>
-    {{ range .Pages }}
-      <li style="margin-bottom: 1.5rem;">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ with .Date }}
-          <span class="text-muted" style="margin-left: 0.5rem;">
-            {{ .Format "Jan 2, 2006" }}
-          </span>
-        {{ end }}
-        {{ with .Description }}
-          <p class="text-muted" style="margin-top: 0.25rem;">{{ . }}</p>
-        {{ end }}
-      </li>
-    {{ end }}
-  </ul>
+
+  {{/* Tag filter row */}}
+  {{ $allTags := .Site.Taxonomies.tags }}
+  {{ if $allTags }}
+    <div class="tag-filter">
+      {{ range $allTags.Alphabetical }}
+        <a href="/tags/{{ .Term | urlize }}/">{{ .Term }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{/* Post list */}}
+  {{ if .Pages }}
+    <div class="post-list">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="text-muted">No posts yet. Check back soon.</p>
+  {{ end }}
 </div>
 {{ end }}

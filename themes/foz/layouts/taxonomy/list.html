@@ -1,13 +1,10 @@
 {{ define "main" }}
 <div class="container">
-  <h1>{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages }}
-      <li style="margin-bottom: 0.75rem;">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="text-muted">({{ .Pages | len }})</span>
-      </li>
+  <h1>Tags</h1>
+  <div class="tag-filter">
+    {{ range .Site.Taxonomies.tags.Alphabetical }}
+      <a href="/tags/{{ .Term | urlize }}/">{{ .Term }} <span class="text-muted">({{ .Count }})</span></a>
     {{ end }}
-  </ul>
+  </div>
 </div>
 {{ end }}
