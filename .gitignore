@@ -1,0 +1,14 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if ever needed)
+node_modules/
+
+# Temp files
+beads-batch.md
