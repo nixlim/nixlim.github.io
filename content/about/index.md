@@ -1,31 +1,33 @@
 ---
 title: "About"
-description: "Foundry of Zero - building genuinely new things from nothing."
+description: "A garage where the universe accidentally left its reality settings unlocked."
 ---
 
 ## The Foundry
 
-Foundry of Zero is where things get built from scratch. Not forks, not templates, not incremental improvements on existing solutions. Every project here starts at zero and is forged into something that didn't exist before.
+Foundry of Zero is where things get built because they can be. Because there are no laws of physics preventing them to be built and because tokens are available to do so. Foundry of Zero is a testament to complete and full adoption of vibe coding as a philosophy, to the chagrin of the naysayers, the doubters, the hubriant.
 
-The name says it: zero is the starting point. Not one, not ten, not "let's take this existing thing and tweak it." Zero. The foundry is where raw ideas get shaped into real, working tools.
+The Foundry of Zero is a garage where the universe accidentally left its reality settings unlocked. A place where things exist not because they should, but because no one remembered to toggle off the "Why Not?" flag in the laws of physics config file.
 
 ## The Builder
 
-NiXLiM. Developer, tinkerer, builder of things.
+NiXLiM. The one who found the unlocked config file and decided to see what happens when you start flipping switches.
 
 [GitHub &rarr;](https://github.com/nixlim)
 
 ## The Philosophy
 
-Most software is derivative. Someone builds something, and a thousand people build slightly different versions of the same thing. That's fine -- the world needs iteration. But it also needs creation. Genuine 0-to-1 work where you look at a problem and build something that nobody else has built yet.
+Somewhere along the way, software development became a game of copying homework. Someone builds a thing. A thousand people fork it, slap a new logo on it, and call it innovation. The world drowns in marginally different todo apps while genuinely weird, interesting problems go untouched because "that's not how it's done."
 
-That's what happens here. Every project in the Foundry is a bet that a particular idea is worth exploring from first principles, without the safety net of existing implementations to copy from.
+The Foundry doesn't care how it's done. The Foundry cares whether it *can* be done. And if no law of physics explicitly forbids it, that's a green light. Every project here starts at zero -- not because starting from scratch is noble, but because the interesting stuff lives in the territory that nobody's mapped yet. You can't fork your way to something that doesn't exist.
 
-## Vibe Engineering
+## Vibe Coding
 
-The tools here are built using what some call "vibe engineering" -- a development practice where the human provides the vision, direction, and taste while AI coding agents handle the implementation. It's not about removing the human from the loop. It's about changing what the human does in the loop.
+Call it what you want. Vibe coding. Vibe engineering. Prompt-driven development. The point is simple: the human has the idea, the AI has the keystrokes, and between the two of them, things get built that would've taken one person months or simply never happened at all.
 
-You think about architecture. You set constraints. You review, course-correct, and iterate. The AI does the typing. The vibes -- your intuition about what's right and what's wrong -- guide the process. The result is software that gets built faster without sacrificing the thoughtfulness that good engineering requires.
+This is not a compromise. This is not "AI-assisted" with air quotes. This is full, unapologetic, all-in vibe coding -- the human sets the direction, the agents build the thing, and the naysayers can write their objections by hand if they prefer. The results speak for themselves: real tools, real code, real functionality, built at a pace that makes traditional development look like it's running on dial-up.
+
+The doubters will catch up eventually. Or they won't. Either way, things are getting built here.
 
 <!-- Placeholder: steampunk goblin Inventor illustration -->
 <!-- <img src="/images/inventor.png" alt="The Inventor - steampunk goblin illustration"> -->

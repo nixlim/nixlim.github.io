@@ -25,8 +25,8 @@ theme = 'foz'
 
 # Site parameters
 [params]
-  tagline = "Build what isn't."
-  description = 'Foundry of Zero - Building from nothing to something.'
+  tagline = "Because why not?"
+  description = 'Foundry of Zero - A garage where the universe left its reality settings unlocked.'
   github = 'https://github.com/foundryofzero'
 
 # Markup configuration

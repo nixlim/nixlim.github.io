@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-description: "Thoughts on vibe engineering, AI-assisted development, and building from zero."
+description: "Dispatches from the garage where the reality settings got left unlocked."
 ---

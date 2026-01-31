@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Open source tools forged from scratch at Foundry of Zero."
+description: "Things that exist because nobody said they couldn't."
 ---
 
-Tools forged from scratch. Every project here was built from zero -- open source, AI-assisted, and designed to solve real problems. No forks, no templates, no incrementalism.
+Things that exist because nobody said they couldn't. Every project here was built from nothing -- no forks, no templates, no "let me just tweak this existing thing." Pure vibe-coded, AI-assisted, built-because-why-not software. If it seems like it shouldn't work, good. That means it's interesting.

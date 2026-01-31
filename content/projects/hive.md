@@ -1,6 +1,6 @@
 ---
 title: "Hive"
-description: "Multi-agent orchestration for software development"
+description: "What if one AI agent is good, but a whole team of them is chaos you can aim?"
 status: "experimental"
 github: "https://github.com/nixlim/hive"
 tech: ["Go", "Claude Code", "Git"]
@@ -8,8 +8,8 @@ featured: true
 weight: 1
 ---
 
-Hive coordinates multiple Claude Code agents through a structured hierarchy of roles -- architect, engineer, and reviewer -- to tackle complex software engineering tasks. Instead of a single agent working sequentially, Hive distributes work across a pool of agents, each operating in isolated git worktrees to prevent conflicts.
+The premise is absurd and therefore worth trying: take multiple Claude Code agents, give them distinct roles -- architect, engineer, reviewer -- and make them collaborate on real software tasks like a dysfunctional but surprisingly productive team.
 
-The architecture revolves around a supervisor process that decomposes high-level objectives into discrete tasks, assigns them to available agents based on role, and manages the integration of completed work back into the main branch. Each agent gets its own worktree and operates independently, with bead-based issue tracking providing the coordination layer.
+Hive throws out the assumption that AI coding means one agent, one task, one context window. Instead, there's a supervisor process that breaks objectives into pieces, assigns them to a pool of agents, and lets each one work in its own isolated git worktree. Nobody steps on anyone's toes. Nobody shares a context window. They just... build things in parallel, and somehow it works.
 
-Hive is currently experimental. The core orchestration loop works, but the challenge lies in the subtleties of multi-agent coordination: handling merge conflicts across worktrees, managing agent context windows efficiently, and knowing when to escalate decisions back to the architect. It's an ongoing exploration of what becomes possible when you treat AI coding agents as a team rather than a solo tool.
+The honest status: experimental. The orchestration loop runs. Agents produce real code. But multi-agent coordination turns out to be exactly as messy as multi-human coordination -- merge conflicts, context drift, and the occasional agent that confidently builds the wrong thing. The difference is you can spin up a new agent in seconds instead of scheduling a meeting about it. The exploration continues because the question "what if AI agents could work as a team?" is too interesting to leave unanswered just because it's hard.
