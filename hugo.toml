@@ -27,7 +27,7 @@ theme = 'foz'
 [params]
   tagline = "Because why not?"
   description = 'Foundry of Zero - A garage where the universe left its reality settings unlocked.'
-  github = 'https://github.com/foundryofzero'
+  github = 'https://github.com/nixlim'
 
 # Markup configuration
 [markup]

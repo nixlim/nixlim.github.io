@@ -1,6 +1,6 @@
 name = "FoZ"
 license = "MIT"
-licenselink = "https://github.com/foundryofzero/foundryofzero_website/blob/main/LICENSE"
+licenselink = "https://github.com/nixlim/nixlim.github.io/blob/main/LICENSE"
 description = "Custom dark theme for Foundry of Zero"
 homepage = "https://foundryofzero.ai/"
 tags = ["dark", "minimal", "developer"]
