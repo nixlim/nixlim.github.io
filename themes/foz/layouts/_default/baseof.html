@@ -13,5 +13,57 @@
   {{- partial "footer.html" . -}}
 
   <script src="/js/nav.js" defer></script>
+
+  {{/* Mermaid: only load when a page contains mermaid code blocks */}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mermaidBlocks = document.querySelectorAll('code.language-mermaid');
+      if (mermaidBlocks.length === 0) return;
+
+      // Replace <pre><code class="language-mermaid"> with <div class="mermaid">
+      mermaidBlocks.forEach(function(block) {
+        const pre = block.parentElement;
+        const div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = block.textContent;
+        pre.parentElement.replaceChild(div, pre);
+      });
+
+      // Load Mermaid from CDN
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js';
+      script.onload = function() {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: 'dark',
+          themeVariables: {
+            darkMode: true,
+            background: '#111111',
+            primaryColor: '#1a3a1a',
+            primaryTextColor: '#e0e0e0',
+            primaryBorderColor: '#00ff41',
+            secondaryColor: '#2a1a0a',
+            secondaryTextColor: '#e0e0e0',
+            secondaryBorderColor: '#b87333',
+            tertiaryColor: '#1a1a1a',
+            lineColor: '#00ff41',
+            textColor: '#e0e0e0',
+            mainBkg: '#1a3a1a',
+            nodeBorder: '#00ff41',
+            clusterBkg: '#111111',
+            titleColor: '#00ff41',
+            edgeLabelBackground: '#111111',
+            nodeTextColor: '#e0e0e0'
+          },
+          flowchart: {
+            htmlLabels: true,
+            curve: 'basis'
+          }
+        });
+        mermaid.run();
+      };
+      document.head.appendChild(script);
+    });
+  </script>
 </body>
 </html>
