@@ -1,54 +1,89 @@
-# Beads Issue Tracking
+// Beads (bd) integration plugin for OpenCode
+// Equivalent to `bd setup claude` hooks: SessionStart + PreCompact
+//
+// What this does:
+//   1. On session.created  - runs `bd prime` and injects output into session context
+//   2. On session.compacting - injects `bd prime` output into compaction context
+//   3. On session.idle - optionally runs `bd sync`
+//
+// Requirements:
+//   - `bd` CLI installed and on PATH
+//   - `bd init` already run in the project (`.beads/` directory exists)
+//
+// Configuration:
+//   Set environment variables to customise behaviour:
+//     BEADS_DISABLE_PRIME=1      - Skip auto-prime on session start
+//     BEADS_DISABLE_COMPACT=1    - Skip injecting context on compaction
+//     BEADS_DISABLE_IDLE=1       - Skip idle event handling
+//     BEADS_SYNC_ON_IDLE=1       - Auto-run `bd sync` when session goes idle
 
-This project uses [Beads (bd)](https://github.com/steveyegge/beads) for issue tracking.
+import { existsSync } from "fs";
+import { join } from "path";
 
-## Core Rules
+export const BeadsPlugin = async ({ $, client, directory }) => {
+  // Only activate if this project uses beads
+  const beadsDir = join(directory, ".beads");
+  if (!existsSync(beadsDir)) {
+    return {};
+  }
 
-- Track ALL work in bd (never use markdown TODOs or comment-based task lists)
-- Use `bd ready` to find available work
-- Use `bd create` to track new issues/tasks/bugs
-- Use `bd sync` at end of session to sync with git remote
-- Git hooks auto-sync on commit/merge
+  /**
+   * Run a bd command and return stdout, or null on failure.
+   * Each argument must be a separate string — Bun Shell's $ template
+   * escapes interpolated values as single tokens, so passing
+   * "prime --stealth" as one string would be treated as a single arg.
+   */
+  async function runBd(...args) {
+    try {
+      const result = await $`bd ${{ raw: args.join(" ") }}`.text();
+      return result.trim();
+    } catch (e) {
+      return null;
+    }
+  }
 
-## Quick Reference
+  return {
+    event: async ({ event }) => {
+      // --- Session Start: load beads context ---
+      if (event.type === "session.created") {
+        if (process.env.BEADS_DISABLE_PRIME === "1") return;
 
-```bash
-bd prime                              # Load complete workflow context
-bd ready                              # Show issues ready to work (no blockers)
-bd list --status=open                 # List all open issues
-bd create --title="..." --type=task   # Create new issue
-bd update <id> --status=in_progress   # Claim work
-bd close <id>                         # Mark complete
-bd dep add <issue> <depends-on>       # Add dependency
-bd sync                               # Sync with git remote
-```
+        const prime = await runBd("prime");
+        if (prime && event.properties?.info?.id) {
+          // Inject bd prime output as context-only message (no AI reply)
+          await client.session.prompt({
+            path: { id: event.properties.info.id },
+            body: {
+              noReply: true,
+              parts: [
+                {
+                  type: "text",
+                  text: `## Beads Issue Tracker Context\n\n${prime}`,
+                },
+              ],
+            },
+          });
+        }
+      }
 
-## Workflow
+      // --- Session Idle: optional sync ---
+      if (event.type === "session.idle") {
+        if (process.env.BEADS_DISABLE_IDLE === "1") return;
 
-1. Check for ready work: `bd ready`
-2. Claim an issue: `bd update <id> --status=in_progress`
-3. Do the work
-4. Mark complete: `bd close <id>`
-5. Sync: `bd sync` (or let git hooks handle it)
+        if (process.env.BEADS_SYNC_ON_IDLE === "1") {
+          await runBd("sync");
+        }
+      }
+    },
 
-## Issue Types
+    // --- Compaction: inject beads context so it survives ---
+    "experimental.session.compacting": async (_input, output) => {
+      if (process.env.BEADS_DISABLE_COMPACT === "1") return;
 
-- `bug` - Something broken
-- `feature` - New functionality
-- `task` - Work item (tests, docs, refactoring)
-- `epic` - Large feature with subtasks
-- `chore` - Maintenance (dependencies, tooling)
-
-## Priorities
-
-- `0` - Critical (security, data loss, broken builds)
-- `1` - High (major features, important bugs)
-- `2` - Medium (default, nice-to-have)
-- `3` - Low (polish, optimization)
-- `4` - Backlog (future ideas)
-
-## Context Loading
-
-Run `bd prime` to get complete workflow documentation in AI-optimized format.
-
-For detailed docs: see AGENTS.md, QUICKSTART.md, or run `bd --help`
+      const prime = await runBd("prime");
+      if (prime) {
+        output.context.push(`## Beads Issue Tracker Context\n\n${prime}`);
+      }
+    },
+  };
+};
