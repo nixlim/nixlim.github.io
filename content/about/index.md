@@ -3,6 +3,8 @@ title: "About"
 description: "A garage where the universe accidentally left its reality settings unlocked."
 ---
 
+<img src="/images/inventor.png" alt="The Inventor - steampunk goblin illustration">
+
 ## The Foundry
 
 Foundry of Zero is where things get built because they can be. Because there are no laws of physics preventing them to be built and because tokens are available to do so. Foundry of Zero is a testament to complete and full adoption of vibe coding as a philosophy, to the chagrin of the naysayers, the doubters, the hubriant.
@@ -28,6 +30,3 @@ Call it what you want. Vibe coding. Vibe engineering. Prompt-driven development.
 This is not a compromise. This is not "AI-assisted" with air quotes. This is full, unapologetic, all-in vibe coding -- the human sets the direction, the agents build the thing, and the naysayers can write their objections by hand if they prefer. The results speak for themselves: real tools, real code, real functionality, built at a pace that makes traditional development look like it's running on dial-up.
 
 The doubters will catch up eventually. Or they won't. Either way, things are getting built here.
-
-
-<img src="/images/inventor.png" alt="The Inventor - steampunk goblin illustration">
